@@ -1,0 +1,32 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+pre{
+    width: 700px;
+    height: auto;
+    background: #1d1c1c;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+a{
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    text-decoration: none;
+    color: #fff;
+    background: #1d1c1c;
+    margin-bottom: 50px;
+}

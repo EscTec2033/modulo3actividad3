@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Actividad 3 - Ejercicios de SQL</h1>
+    <pre>
+        create database escuela;
+        use escuela;
+
+        create table nuevos_estudiantes(
+	    id int primary key,
+	    nombre varchar(255),
+	    edad int
+        );
+
+        create table estudiantes_graduados(
+	    id int primary key auto_increment,
+	    nombre varchar(255),
+	    edad int
+        );
+
+        create table clase_a(
+	    id INT primary key,
+	    nombre VARCHAR(255)
+        );
+
+        create table nueva_clase_b(
+	    id INT primary key,
+	    nombre VARCHAR(255),
+	    clase_a_id INT,
+	    foreign key (clase_a_id) references clase_a(id)
+        );
+    </pre>
+    <a href="captura.pdf" target="_blank">ir a PDF</a>
+</body>
+</html>
